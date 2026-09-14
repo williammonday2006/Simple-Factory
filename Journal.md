@@ -1,2 +1,4 @@
 # Phase 1
 Moving object creation to SimpleEnemyFactory decouples the main method from the concrete enemy classes. Instead of main having to use new Goblin(), it only needs to know the enemy type and the factory.
+# Phase 2
+The factory method pattern uses inheritance to allow different spawners to decide which enemies they create, EnenySpawner contains the general spawning process while Forest and Dungeon provide their own implementations. This makes adding another level type easy. If i wanted MountainSPawner all u needed to do is extend enemy spawner and override create enemy to make mountain enemies.
