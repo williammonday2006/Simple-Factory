@@ -2,13 +2,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        EnemySpawner forest = new ForestSpawner();
-        EnemySpawner dungeon = new DungeonSpawner();
+        Enemy skeleton =
+            new Skeleton(new MageEquipmentFactory());
 
-        Enemy goblin = forest.spawnEnemy("goblin");
-        Enemy skeleton = dungeon.spawnEnemy("skeleton");
+        Enemy goblin =
+            new Goblin(new WarriorEquipmentFactory());
 
-        goblin.attack();
         skeleton.attack();
+        goblin.attack();
     }
 }
