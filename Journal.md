@@ -1,0 +1,2 @@
+# Phase 1
+Moving object creation to SimpleEnemyFactory decouples the main method from the concrete enemy classes. Instead of main having to use new Goblin(), it only needs to know the enemy type and the factory.
